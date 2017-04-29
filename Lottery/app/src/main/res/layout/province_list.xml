@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/textViewProvinceCode"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="2"
+        android:paddingTop="10dp"
+        android:textColor="#d697242c"
+        android:paddingBottom="10dp"
+        android:text="Code"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewProvinceName"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_weight="7"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Province"
+        android:textAlignment="center"
+        android:textColor="#e71d2459"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/nexticon"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>
