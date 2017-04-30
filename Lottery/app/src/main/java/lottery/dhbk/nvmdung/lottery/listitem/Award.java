@@ -1,4 +1,4 @@
-package lottery.dhbk.nvmdung.lottery.ui;
+package lottery.dhbk.nvmdung.lottery.listitem;
 
 /**
  * Created by nhockaito1995 on 29/04/2017.

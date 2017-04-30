@@ -1,4 +1,4 @@
-package lottery.dhbk.nvmdung.lottery.ui;
+package lottery.dhbk.nvmdung.lottery.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +9,9 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import lottery.dhbk.nvmdung.lottery.adapter.ProvinceAdapter;
 import lottery.dhbk.nvmdung.lottery.R;
+import lottery.dhbk.nvmdung.lottery.listitem.Province;
 
 public class MainActivity extends AppCompatActivity {
 

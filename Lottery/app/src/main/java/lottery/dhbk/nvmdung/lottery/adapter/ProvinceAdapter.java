@@ -1,4 +1,4 @@
-package lottery.dhbk.nvmdung.lottery.ui;
+package lottery.dhbk.nvmdung.lottery.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import lottery.dhbk.nvmdung.lottery.R;
+import lottery.dhbk.nvmdung.lottery.listitem.Province;
 
 /**
  * Created by nhockaito1995 on 29/04/2017.

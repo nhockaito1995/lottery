@@ -1,4 +1,4 @@
-package lottery.dhbk.nvmdung.lottery.ui;
+package lottery.dhbk.nvmdung.lottery.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,26 +10,27 @@ import android.widget.TextView;
 import java.util.List;
 
 import lottery.dhbk.nvmdung.lottery.R;
+import lottery.dhbk.nvmdung.lottery.listitem.Date;
 
 /**
- * Created by nhockaito1995 on 29/04/2017.
+ * Created by nhockaito1995 on 30/04/2017.
  */
 
-public class AwardAdapter extends BaseAdapter {
+public class DateAdapter extends BaseAdapter {
 
     public Context myContext;
     public int myLayout;
-    public List<Award> arrayAward;
+    public List<Date> arrayDate;
 
-    public AwardAdapter(Context context, int layout, List<Award> awardList){
-        myContext = context;
-        myLayout = layout;
-        arrayAward = awardList;
+    public DateAdapter(Context myContext, int myLayout, List<Date> arrayDate) {
+        this.myContext = myContext;
+        this.myLayout = myLayout;
+        this.arrayDate = arrayDate;
     }
 
     @Override
     public int getCount() {
-        return arrayAward.size();
+        return arrayDate.size();
     }
 
     @Override
@@ -49,11 +50,8 @@ public class AwardAdapter extends BaseAdapter {
 
         convertView = inflater.inflate(myLayout, null);
 
-        TextView txtType = (TextView) convertView.findViewById(R.id.textViewType);
-        txtType.setText(arrayAward.get(position).type);
-
-        TextView txtResults = (TextView) convertView.findViewById(R.id.textViewResults);
-        txtResults.setText(arrayAward.get(position).results);
+        TextView txtDate = (TextView) convertView.findViewById(R.id.textViewDate);
+        txtDate.setText(arrayDate.get(position).date);
 
         return convertView;
     }

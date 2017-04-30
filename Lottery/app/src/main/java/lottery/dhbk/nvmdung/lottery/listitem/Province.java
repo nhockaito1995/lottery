@@ -1,4 +1,4 @@
-package lottery.dhbk.nvmdung.lottery.ui;
+package lottery.dhbk.nvmdung.lottery.listitem;
 
 public class Province {
     public String ProvinceCode;

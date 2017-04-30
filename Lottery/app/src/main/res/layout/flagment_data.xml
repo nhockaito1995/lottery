@@ -5,6 +5,7 @@
 
     <ListView
         android:id="@+id/ListViewFragment"
+        android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
