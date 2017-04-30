@@ -44,8 +44,8 @@ public class FragmentAward extends android.app.Fragment {
         String s = str.replace("[","").replace("]","");
         String[] a = s.split(",");
         for (int i=0; i < a.length; i++){
-            if (i == 0) result += a[i];
-            else result += "-"+a[i];
+            if (i == 0) result += a[i].replace("\"","");
+            else result += " - "+a[i].replace("\"","");
         }
         return result;
     }
